@@ -1,4 +1,5 @@
 rootProject.name = 'thinkinginjava'
 include 'collection'
 include 'common'
+include 'jvm'
 
