@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'com.bat.jyzh.HeapTest'
+
+group 'com.bat.jyzh'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    compile group: 'org.openjdk.jol', name: 'jol-core', version: '0.13'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    jar {
+        manifest {
+            attributes(
+                    'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                    'Main-Class': 'com.bat.jyzh.HeapTest'
+            )
+        }
+    }
+}
