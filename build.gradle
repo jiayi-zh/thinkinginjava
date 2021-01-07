@@ -2,15 +2,21 @@ plugins {
     id 'java'
 }
 
-allprojects {
-    group 'com.bat.jyzh'
-    version '1.0-SNAPSHOT'
+group 'com.bat.jyzh'
+version '1.0-SNAPSHOT'
 
+allprojects {
     repositories {
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
         mavenLocal()
         mavenCentral()
+    }
+
+    allprojects {
+        tasks.withType(JavaCompile) {
+            options.encoding = 'UTF-8'
+        }
     }
 }
 
@@ -20,8 +26,4 @@ dependencies {
 
 test {
     useJUnitPlatform()
-}
-
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
 }
