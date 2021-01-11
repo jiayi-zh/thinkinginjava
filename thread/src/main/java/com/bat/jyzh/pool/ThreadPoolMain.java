@@ -2,10 +2,7 @@ package com.bat.jyzh.pool;
 
 import com.bat.jyzh.task.SleepTask;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.SynchronousQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * {@link java.util.concurrent.Executors} create
@@ -16,6 +13,10 @@ import java.util.concurrent.TimeUnit;
 public class ThreadPoolMain {
     public static void main(String[] args) {
         tempTest();
+
+        ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(1);
+        ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor();
 
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
                 5,
