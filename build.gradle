@@ -1,27 +1,24 @@
 plugins {
-    id 'java'
+    id 'java-library'
 }
 
-group 'com.bat.jyzh'
-version '1.0-SNAPSHOT'
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
 
-allprojects {
+    group 'com.bat.jyzh'
+    version '1.0-SNAPSHOT'
+    sourceCompatibility = '1.8'
+    [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
     repositories {
-        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
         mavenLocal()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         mavenCentral()
     }
 
-    allprojects {
-        tasks.withType(JavaCompile) {
-            options.encoding = 'UTF-8'
-        }
+    dependencies {
     }
-}
-
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
 }
 
 test {

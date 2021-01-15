@@ -14,7 +14,7 @@ public class Student implements Person {
 
     private String name;
 
-    private String age;
+    private Integer age;
 
     private List<Teacher> teacherList;
 
@@ -34,11 +34,11 @@ public class Student implements Person {
         this.name = name;
     }
 
-    public String getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 

@@ -12,8 +12,6 @@ import java.util.concurrent.*;
  **/
 public class ThreadPoolMain {
     public static void main(String[] args) {
-        tempTest();
-
         ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
         ExecutorService fixedThreadPool = Executors.newFixedThreadPool(1);
         ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor();
@@ -28,18 +26,5 @@ public class ThreadPoolMain {
         for (int i = 0; i < 6; i++) {
             threadPoolExecutor.submit(new SleepTask(5000));
         }
-
-        SynchronousQueue<Object> synchronousQueue = new SynchronousQueue<>();
-    }
-
-    public static void tempTest() {
-//        printBinaryString(-1 << 29);
-//        printBinaryString(-1 << 29 - 1);
-
-
-    }
-
-    public static void printBinaryString(int i) {
-        System.out.println(Integer.toBinaryString(i));
     }
 }
