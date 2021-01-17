@@ -12,11 +12,6 @@ import org.openjdk.jol.info.ClassLayout;
  * @version 1.0 2021/1/11 9:41
  **/
 public class PointerCompressionTest {
-
-//    private static final int[] ARR = new int[]{1, 2, 3};
-
-//    private static final NorMalClass NORMAL_CLASS = new NorMalClass();
-
     public static void main(String[] args) {
 
         // 空对象
