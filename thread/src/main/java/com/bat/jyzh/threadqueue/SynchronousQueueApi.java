@@ -1,4 +1,4 @@
-package com.bat.jyzh.blockqueue;
+package com.bat.jyzh.threadqueue;
 
 import java.util.concurrent.SynchronousQueue;
 
