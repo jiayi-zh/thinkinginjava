@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a95469f7-5fd8-4d44-9c53-26f0c34ffe44" name="Default Changelist" comment="Thread">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a95469f7-5fd8-4d44-9c53-26f0c34ffe44" name="Default Changelist" comment="Blocking Queue">
+      <change afterPath="$PROJECT_DIR$/thread/src/main/java/com/bat/jyzh/aqs/ReentrantReadWriteLockApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/main/java/com/bat/jyzh/aqs/SemaphoreApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thread/src/main/java/com/bat/jyzh/pool/ScheduleThreadPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bat/jyzh/CommonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/bat/jyzh/CommonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thread/src/main/java/com/bat/jyzh/threadqueue/BlockingQueueApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/thread/src/main/java/com/bat/jyzh/threadqueue/BlockingQueueApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thread/src/main/java/com/bat/jyzh/threadqueue/BlockingDequeApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/thread/src/main/java/com/bat/jyzh/threadqueue/BlockingDequeApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +84,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../third/jdk-source/src/java/util/concurrent/LinkedBlockingQueue.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../jdk-source/src/java/util/concurrent/Semaphore.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../jdk-source/src/java/util/concurrent/locks/AbstractQueuedSynchronizer.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -110,14 +113,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thinkinginspringcloud" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jdk-source/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="debugger.stepping" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -126,13 +132,26 @@
       <recent name="com.bat.jyzh.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.thinkinginjava [clean]">
-    <configuration name="CommonTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bat.jyzh.CommonTest" />
-      <module name="thinkinginjava.common.main" />
+  <component name="RunManager" selected="Application.ReentrantReadWriteLockApi">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashMapApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bat.jyzh.map.HashMapApi" />
+      <module name="thinkinginjava.collection.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bat.jyzh.*" />
+          <option name="PATTERN" value="com.bat.jyzh.map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,22 +159,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PointerCompressionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bat.jyzh.memory.PointerCompressionTest" />
-      <module name="thinkinginjava.jvm.main" />
-      <option name="VM_PARAMETERS" value="-XX:-UseCompressedClassPointers -XX:-UseCompressedOops" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bat.jyzh.memory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReentrantLockApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bat.jyzh.aqs.ReentrantLockApi" />
+    <configuration name="ReentrantReadWriteLockApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bat.jyzh.aqs.ReentrantReadWriteLockApi" />
       <module name="thinkinginjava.thread.main" />
       <extension name="coverage">
         <pattern>
@@ -167,12 +172,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnsafeApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bat.jyzh.cas.UnsafeApi" />
+    <configuration name="ScheduleThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bat.jyzh.pool.ScheduleThreadPool" />
       <module name="thinkinginjava.thread.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bat.jyzh.cas.*" />
+          <option name="PATTERN" value="com.bat.jyzh.pool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SemaphoreApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bat.jyzh.aqs.SemaphoreApi" />
+      <module name="thinkinginjava.thread.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bat.jyzh.aqs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,19 +220,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ReentrantLockApi" />
-      <item itemvalue="Application.UnsafeApi" />
-      <item itemvalue="Application.PointerCompressionTest" />
-      <item itemvalue="Application.CommonTest" />
+      <item itemvalue="Application.ScheduleThreadPool" />
+      <item itemvalue="Application.SemaphoreApi" />
       <item itemvalue="Gradle.thinkinginjava [clean]" />
+      <item itemvalue="Application.HashMapApi" />
+      <item itemvalue="Application.ReentrantReadWriteLockApi" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReentrantReadWriteLockApi" />
+        <item itemvalue="Application.HashMapApi" />
+        <item itemvalue="Application.SemaphoreApi" />
+        <item itemvalue="Application.ScheduleThreadPool" />
         <item itemvalue="Gradle.thinkinginjava [clean]" />
-        <item itemvalue="Application.CommonTest" />
-        <item itemvalue="Application.PointerCompressionTest" />
-        <item itemvalue="Application.UnsafeApi" />
-        <item itemvalue="Application.ReentrantLockApi" />
       </list>
     </recent_temporary>
   </component>
@@ -255,6 +273,11 @@
       <workItem from="1610692907094" duration="11161000" />
       <workItem from="1610848988441" duration="8511000" />
       <workItem from="1611543093870" duration="239000" />
+      <workItem from="1612148319226" duration="12000" />
+      <workItem from="1612148340444" duration="8372000" />
+      <workItem from="1612173913924" duration="796000" />
+      <workItem from="1612174996341" duration="773000" />
+      <workItem from="1612176249110" duration="814000" />
     </task>
     <task id="LOCAL-00001" summary="jvm">
       <created>1609915368351</created>
@@ -326,11 +349,18 @@
       <option name="project" value="LOCAL" />
       <updated>1611569200477</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Blocking Queue">
+      <created>1611666183318</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611666183318</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -353,9 +383,19 @@
     <MESSAGE value="thread" />
     <MESSAGE value="指针压缩" />
     <MESSAGE value="Thread" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thread" />
+    <MESSAGE value="Blocking Queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Blocking Queue" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../third/jdk-source/src/java/util/concurrent/ScheduledThreadPoolExecutor.java</url>
+          <line>585</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo />
@@ -363,6 +403,9 @@
     </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/thinkinginjava$SemaphoreApi.ic" NAME="SemaphoreApi Coverage Results" MODIFIED="1612175704250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.bat.jyzh.aqs.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/thinkinginjava$ThreadPoolMain.ic" NAME="ThreadPoolMain Coverage Results" MODIFIED="1609930812710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.bat.jyzh.pool.*</FILTER>
     </SUITE>
