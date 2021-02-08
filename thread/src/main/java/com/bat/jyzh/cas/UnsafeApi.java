@@ -36,9 +36,7 @@ public class UnsafeApi {
 
     public static void main(String[] args) {
         Student student = new Student();
-        student.setId(1L);
-
-        boolean andSwapInt = UNSAFE.compareAndSwapLong(student, STUDENT_ID_OFFSET, 1L, 2L);
-        System.out.println(andSwapInt + " - " + student.getId());
+        boolean andSwapInt = UNSAFE.compareAndSwapLong(student, STUDENT_ID_OFFSET, 0, 2L);
+        System.out.println(andSwapInt + " - " + UNSAFE.getInt(student, STUDENT_ID_OFFSET));
     }
 }
