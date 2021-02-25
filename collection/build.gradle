@@ -5,6 +5,8 @@ plugins {
 dependencies {
     compile project(":common")
 
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
 }
 
