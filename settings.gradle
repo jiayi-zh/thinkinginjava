@@ -3,4 +3,5 @@ include 'collection'
 include 'common'
 include 'jvm'
 include 'thread'
+include 'design-patterns'
 
