@@ -10,6 +10,6 @@ public class CustomServiceImpl implements CustomService {
 
     @Override
     public void speak() {
-        System.out.println("被代理对象的实现 ...");
+        System.out.println("被代理对象的真正实现 ...");
     }
 }

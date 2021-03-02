@@ -9,4 +9,8 @@ package com.bat.jyzh.designpatterns.proxy.dynamic.support;
 public interface CustomService {
 
     void speak();
+
+    default void talk() {
+        System.out.println("JDK1.8 default 方法");
+    }
 }
